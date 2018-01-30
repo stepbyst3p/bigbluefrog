@@ -1,5 +1,5 @@
 section {
-    padding: 180px 0; 
+    padding: 90px 0; 
 }
 
 section.main {
@@ -10,7 +10,7 @@ section.main {
     position: relative;
     z-index: 3;
     width: 100%;
-    margin-bottom: -170px;
+    bottom: 80px;
     padding: 60px;
     clear: left;
     border-radius: 5px;
