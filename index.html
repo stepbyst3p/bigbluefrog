@@ -11,6 +11,15 @@
         crossorigin="anonymous"></script>
     <script src="./semantic/dist/semantic.min.js"></script>
     <link rel="stylesheet" href="./css/style.css">
+    <style>
+        canvas {
+            display: block;
+            left: 75%;
+            margin: -200px 0 0 -200px;
+            position: absolute;
+            top: 55%;
+        }
+    </style>
 </head>
 
 <body>
@@ -39,7 +48,6 @@
                 <a class="item">Company</a>
                 <a class="item">Careers</a>
                 <div class="right item">
-                    <a class="ui inverted button">Log in</a>
                     <a class="ui inverted button">Sign Up</a>
                 </div>
             </div>
@@ -59,10 +67,11 @@
             </div>
         </div>
         </div>
+        <canvas id="canvas" width="400" height="400"></canvas>
     </section>
     <div class="ui container">
         <div class="subscribe-overlay-block">
-            <h3>Get the latest news</h3>
+            <h3 class="h3">Get the latest news</h3>
             <div class="ui form">
                 <div class="three fields">
                     <div class="field">
@@ -79,28 +88,27 @@
                     <div class="field">
                         <input type="text" placeholder="Last Name">
                     </div>
-                    <button class="ui button ">Send</button>
+                    <button class="ui button primary ">Send</button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="spacing90"></div>
-    <section>
+    <section class="features">
         <div class="ui container">
             <div class="risks">
-                <h2>
+                <h2 class="h2">
                     High risks require hedging tools
                 </h2>
                 <div class="ui grid">
                     <div class="four wide column">
-                        <h3>
+                        <h3 class="h3">
                             $225 million
                         </h3>
                         <p>ICO investment losses in 2017
                         </p>
                     </div>
                     <div class="four wide column">
-                        <h3>
+                        <h3 class="h3">
                             $50 million
                         </h3>
                         <p>Temporary losses of The DAO investors
@@ -108,13 +116,13 @@
                         </p>
                     </div>
                     <div class="four wide column">
-                        <h3>~ $7 million
+                        <h3 class="h3">~ $7 million
                         </h3>
                         <p>Money stolen during the DeOS ICO
                         </p>
                     </div>
                     <div class="four wide column">
-                        <h3>~ 60%
+                        <h3 class="h3">~ 60%
                         </h3>
                         <p>Bitcoin volatility within one week
                         </p>
@@ -133,9 +141,9 @@
         </div>
     </section>
     <section class="whatIs">
-        <div class="ui vertical stripe segment">
+        <div class="ui vertical stripe">
             <div class="ui middle aligned stackable grid container">
-                <h2 class="ui header huge">What is CryptoDerivatives?</h2>
+                <h2 class="h2">What is CryptoDerivatives?</h2>
                 <div class="row">
                     <div class="eight wide column">
                         <div class="whatIs-card">
@@ -168,71 +176,54 @@
             </div>
         </div>
     </section>
-    <section class="features">
-        <div class="ui vertical stripe segment">
-            <div class="ui middle aligned stackable grid container">
-                <h2 class="ui header huge">What is CryptoDerivatives?</h2>
-                <div class="row">
-                    <div class="four wide column">
-                        <h3>For ICO Investors</h3>
-                        <p>We help to attract investors and protect against post-listing pump & dump schemes
-                        </p>
-                    </div>
-                    <div class="four wide column">
-                        <h3>For ICO Investors</h3>
-                        <p>We help to attract investors and protect against post-listing pump & dump schemes
-                        </p>
-                    </div>
-                    <div class="four wide column">
-                        <h3>For ICO Investors</h3>
-                        <p>We help to attract investors and protect against post-listing pump & dump schemes
-                        </p>
-                    </div>
-                    <div class="four wide column">
-                        <h3>For ICO Investors</h3>
-                        <p>We help to attract investors and protect against post-listing pump & dump schemes
-                        </p>
-                    </div>
+
+    <section class="ui vertical stripe  inverted">
+        <div class="ui container">
+            <div class="ui grid big-typo">
+                <div class="eight wide column">
+                    <h3 class="h3">Breaking The Grid,
+                    </h3>
+                </div>
+                <div class="eight wide column">
+                    <p>Instead of focusing on content creation and hard work, we have learned how to master the art of doing
+                        nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic
+                        and worth your attention.</p>
+                    <a class="ui large button qq tiny">Read More</a>
+                </div>
+            </div>
+            <div class="spacing90"></div>
+            <div class="ui grid big-typo">
+                <div class="ten wide column">
+                    <p>Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but its really
+                        true. It took years of gene splicing and combinatory DNA research, but our bananas can really Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Assumenda repellat temporibus sunt, ullam rerum
+                        quia distinctio, natus et maxime saepe facilis numquam dicta, libero eum nam reiciendis sed? Repellendus,
+                        libero? dance.
+                    </p>
+                    <a class="ui large button qq tiny">I'm Sx`till Quite Interested</a>
+                </div>
+                <div class="six wide column text-right">
+                    <h3 class="h3">Did We Tell</h3>
                 </div>
             </div>
         </div>
     </section>
-    <div class="ui vertical stripe quote segment">
-        <div class="ui equal width stackable internally celled grid">
-            <div class="center aligned row">
-                <div class="column">
-                    <h3>"What a Company"</h3>
-                    <p>That is what they all say about us</p>
-                </div>
-                <div class="column">
-                    <h3>"I shouldn't have gone with their competitor."</h3>
-                    <p>
-                        <img src="assets/images/avatar/nan.jpg" class="ui avatar image">
-                        <b>Nan</b> Chief Fun Officer Acme Toys
-                    </p>
-                </div>
+    <section>
+        <div class="ui container">
+            <div class="whatIs-card text-center">
+                <h2 class="h2">How CryptoDerivatives Works</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quidem, aliquam eaque itaque earum obcaecati
+                    accusantium velit distinctio similique ducimus cumque beatae. Debitis rem illo enim atque quae, officiis
+                    nostrum.
+                    <br>
+                    <br>
+                </p>
+                <button class="ui  button qq primary">
+                    <i class="left newspaper icon"></i>
+                    Download Whitepaper</button>
             </div>
         </div>
-    </div>
-
-    <div class="ui vertical stripe segment">
-        <div class="ui text container">
-            <h3 class="ui header">Breaking The Grid, Grabs Your Attention</h3>
-            <p>Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing
-                by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth
-                your attention.</p>
-            <a class="ui large button">Read More</a>
-            <h4 class="ui horizontal header divider">
-                <a href="#">Case Studies</a>
-            </h4>
-            <h3 class="ui header">Did We Tell You About Our Bananas?</h3>
-            <p>Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but its really true. It
-                took years of gene splicing and combinatory DNA research, but our bananas can really dance.</p>
-            <a class="ui large button">I'm Still Quite Interested</a>
-        </div>
-    </div>
-
-
+    </section>
     <div class="ui inverted vertical footer segment">
         <div class="ui container">
             <div class="ui stackable inverted divided equal height stackable grid">
@@ -262,8 +253,210 @@
         </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+        /*=============================================================================*/
+        /* Smooth Trail
+        /*=============================================================================*/
+        var smoothTrail = function (c, cw, ch) {
+
+            /*=============================================================================*/
+            /* Initialize
+            /*=============================================================================*/
+            this.init = function () {
+                this.loop();
+            };
+
+            /*=============================================================================*/
+            /* Variables
+          /*=============================================================================*/
+            var _this = this;
+            this.c = c;
+            this.ctx = c.getContext('2d');
+            this.cw = cw;
+            this.ch = ch;
+            this.mx = 0;
+            this.my = 0;
+
+            //trail
+            this.trail = [];
+            this.maxTrail = 200;
+            this.mouseDown = false;
+
+            this.ctx.lineWidth = .1;
+            this.ctx.lineJoin = 'round';
+
+            this.radius = 1;
+            this.speed = 0.4;
+            this.angle = 0;
+            this.arcx = 0;
+            this.arcy = 0;
+            this.growRadius = true;
+            this.seconds = 0;
+            this.milliseconds = 0;
+
+            /*=============================================================================*/
+            /* Utility Functions
+          /*=============================================================================*/
+            this.rand = function (rMi, rMa) { return ~~((Math.random() * (rMa - rMi + 1)) + rMi); };
+            this.hitTest = function (x1, y1, w1, h1, x2, y2, w2, h2) { return !(x1 + w1 < x2 || x2 + w2 < x1 || y1 + h1 < y2 || y2 + h2 < y1); };
+
+            /*=============================================================================*/
+            /* Create Point
+          /*=============================================================================*/
+            this.createPoint = function (x, y) {
+                this.trail.push({
+                    x: x,
+                    y: y
+                });
+            };
+
+            /*=============================================================================*/
+            /* Update Trail
+          /*=============================================================================*/
+            this.updateTrail = function () {
+
+                if (this.trail.length < this.maxTrail) {
+                    this.createPoint(this.arcx, this.arcy);
+                }
+
+                if (this.trail.length >= this.maxTrail) {
+                    this.trail.splice(0, 1);
+                }
+            };
+
+            /*=============================================================================*/
+            /* Update Arc
+          /*=============================================================================*/
+            this.updateArc = function () {
+                this.arcx = (this.cw / 2) + Math.sin(this.angle) * this.radius;
+                this.arcy = (this.ch / 2) + Math.cos(this.angle) * this.radius;
+                var d = new Date();
+                this.seconds = d.getSeconds();
+                this.milliseconds = d.getMilliseconds();
+                this.angle += this.speed * (this.seconds + 1 + (this.milliseconds / 1000));
+
+                if (this.radius <= 1) {
+                    this.growRadius = true;
+                }
+                if (this.radius >= 200) {
+                    this.growRadius = false;
+                }
+
+                if (this.growRadius) {
+                    this.radius += 1;
+                } else {
+                    this.radius -= 1;
+                }
+            };
+
+            /*=============================================================================*/
+            /* Render Trail
+          /*=============================================================================*/
+            this.renderTrail = function () {
+                var i = this.trail.length;
+
+                this.ctx.beginPath();
+                while (i--) {
+                    var point = this.trail[i];
+                    var nextPoint = (i == this.trail.length) ? this.trail[i + 1] : this.trail[i];
+
+                    var c = (point.x + nextPoint.x) / 2;
+                    var d = (point.y + nextPoint.y) / 2;
+                    this.ctx.quadraticCurveTo(Math.round(this.arcx), Math.round(this.arcy), c, d);
 
 
+
+                };
+                this.ctx.strokeStyle = 'hsla(' + this.rand(170, 300) + ', 100%, ' + this.rand(50, 75) + '%, 1)';
+                this.ctx.stroke();
+                this.ctx.closePath();
+
+            };
+
+
+            /*=============================================================================*/
+            /* Clear Canvas
+          /*=============================================================================*/
+            this.clearCanvas = function () {
+                //this.ctx.globalCompositeOperation = 'source-over';
+                //this.ctx.clearRect(0,0,this.cw,this.ch);
+
+                this.ctx.globalCompositeOperation = 'destination-out';
+                this.ctx.fillStyle = 'rgba(0,0,0,.1)';
+                this.ctx.fillRect(0, 0, this.cw, this.ch);
+                this.ctx.globalCompositeOperation = 'lighter';
+            };
+
+            /*=============================================================================*/
+            /* Animation Loop
+          /*=============================================================================*/
+            this.loop = function () {
+                var loopIt = function () {
+                    requestAnimationFrame(loopIt, _this.c);
+                    _this.clearCanvas();
+                    _this.updateArc();
+                    _this.updateTrail();
+                    _this.renderTrail();
+                };
+                loopIt();
+            };
+
+        };
+
+        /*=============================================================================*/
+        /* Check Canvas Support
+        /*=============================================================================*/
+        var isCanvasSupported = function () {
+            var elem = document.createElement('canvas');
+            return !!(elem.getContext && elem.getContext('2d'));
+        };
+
+        /*=============================================================================*/
+        /* Setup requestAnimationFrame
+        /*=============================================================================*/
+        var setupRAF = function () {
+            var lastTime = 0;
+            var vendors = ['ms', 'moz', 'webkit', 'o'];
+            for (var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+                window.requestAnimationFrame = window[vendors[x] + 'RequestAnimationFrame'];
+                window.cancelAnimationFrame = window[vendors[x] + 'CancelAnimationFrame'] || window[vendors[x] + 'CancelRequestAnimationFrame'];
+            };
+
+            if (!window.requestAnimationFrame) {
+                window.requestAnimationFrame = function (callback, element) {
+                    var currTime = new Date().getTime();
+                    var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+                    var id = window.setTimeout(function () { callback(currTime + timeToCall); }, timeToCall);
+                    lastTime = currTime + timeToCall;
+                    return id;
+                };
+            };
+
+            if (!window.cancelAnimationFrame) {
+                window.cancelAnimationFrame = function (id) {
+                    clearTimeout(id);
+                };
+            };
+        };
+
+        /*=============================================================================*/
+        /* Define Canvas and Initialize
+        /*=============================================================================*/
+        if (isCanvasSupported) {
+            var c = document.createElement('canvas');
+            c.width = 400;
+            c.height = 400;
+            var cw = c.width;
+            var ch = c.height;
+            document.body.appendChild(c);
+            var cl = new smoothTrail(c, cw, ch);
+
+            setupRAF();
+            cl.init();
+        }
+
+    </script>
 
 
 </body>

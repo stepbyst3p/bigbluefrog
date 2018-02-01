@@ -20,8 +20,9 @@
 
 @headerFont        : 'Montserrat', sans-serif;
 @fontSmoothing     : antialiased;
-
+@pageFont          : 'Hind', sans-serif;
 @importGoogleFonts : true;
 @googleFontName    : 'Montserrat';
 @googleFontSizes   : '400,500,700';
-@googleFontFamily  : 'Montserrat:400,500,700';
+@googleFontFamily  : 'Montserrat:400,500,700|Hind:400,500,700';
+
