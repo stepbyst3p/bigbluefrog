@@ -1,16 +1,8 @@
 {
-  "name": "bigbluefrog",
+  "name": "cry",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
-  "dependencies": {
-    "gatsby-cli": "^1.1.33",
-    "gulp": "^3.9.1",
-    "semantic-ui": "^2.2.14"
-  },
-  "devDependencies": {
-    "browser-sync": "^2.23.6"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/stepbyst3p/bigbluefrog/issues"
   },
-  "homepage": "https://github.com/stepbyst3p/bigbluefrog#readme"
+  "homepage": "https://github.com/stepbyst3p/bigbluefrog#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "gulp-sass": "^3.1.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.6"
+  }
 }
