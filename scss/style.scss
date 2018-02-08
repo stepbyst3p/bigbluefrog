@@ -361,6 +361,15 @@ footer input {
     }
 }
 @media (min-width:768px){
+    .product__content-roadmap-content .roadmap-tree .roadmap-item.left .roadmap-item-card .tree-connect {
+        top: 63px;
+        left: calc(100% + 6px);
+        width: 109px !important;
+    }
+    .product__content-roadmap-content .roadmap-tree .roadmap-item.left .roadmap-item-card .tree-connect {
+        left: calc(100% + 6px);
+        width: 109px !important;
+    }
     .product{
         padding-top:150px
     }
@@ -421,11 +430,11 @@ footer input {
         top:-4px
     }
     .product__content-roadmap-content .roadmap-tree .roadmap-item .tree-connect{
-        width:115px
+        width:109px !important;
     }
     .product__content-roadmap-content .roadmap-tree .roadmap-item-card{
         padding:50px;
-        max-width:calc(50% - 115px)
+        width: 420px;
     }
     .product__content-roadmap-content .roadmap-tree .roadmap-item-card .roadmap-item-title{
         font-size:24px;
@@ -434,6 +443,7 @@ footer input {
     .product__content-roadmap-content .roadmap-tree .roadmap-item-card .roadmap-item-description{
         margin-top:28px
     }
+    
 }
 
 .btn-link {
