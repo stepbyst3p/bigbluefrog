@@ -224,3 +224,218 @@ footer input {
         color: #333;
     }
 }
+
+.cta {
+    padding: 60px 0;
+    text-align: center;
+    form {
+        justify-content: center;
+    }
+}
+
+.product__content-header-description{
+    max-width:700px;
+    margin-top:20px
+}
+.product__content-roadmap-content .roadmap-tree{
+    position:relative;
+    padding-bottom:150px;
+    list-style: none;
+}
+.product__content-roadmap-content .roadmap-tree::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:4px;
+    height:100%;
+    border-right:2px solid #007bff
+}
+.product__content-roadmap-content .roadmap-tree .year{
+    position:relative;
+    width: 130px;
+    height: 55px;
+    background-color:#FFF;
+    text-align:center;
+    line-height:50px;
+    border:2px solid #007bff;
+    border-radius:100px;
+    font-size:24px;
+    font-weight:700
+}
+.product__content-roadmap-content .roadmap-tree .roadmap-item-card{
+    background:#FFF;
+    box-shadow:0 8px 12px 0 rgba(50,49,58,.25);
+    border-radius:6px;
+    display:inline-block;
+    position:relative;
+    text-align:left;
+    will-change:right,top,left,opacity
+}
+.product__content-roadmap-content .roadmap-tree .roadmap-item-card .tree-connect{
+    position:absolute;
+    top:30px;
+    border-bottom:2px solid #007bff;
+    will-change:width
+}
+.product__content-roadmap-content .roadmap-tree .roadmap-item-card .tree-connect::before{
+    content:'';
+    position:absolute;
+    display:inline-block;
+    width:20px;
+    height:20px;
+    background:#FFF;
+    border:6px solid #007bff;
+    border-radius:20px;
+    box-sizing:border-box
+}
+.product__content-roadmap-content .roadmap-tree .roadmap-item-card .tree-connect::after{
+    content:'';
+    display:inline-block;
+    position:absolute;
+    width:10px;
+    height:10px;
+    background:#FFF;
+    border:2px solid #007bff;
+    border-radius:10px;
+    box-sizing:border-box
+}
+.product__content-roadmap-content .roadmap-tree .roadmap-item-card .roadmap-item-title{
+    font-size:16px;
+    line-height:22px;
+    font-weight:700
+}
+.product__content-roadmap-content .roadmap-tree .roadmap-item-card .roadmap-item-description{
+    margin-top:10px
+}
+.product__content p{
+    font-size:20px;
+    line-height:28px;
+    color:rgba(50,49,58,.7)
+}
+@media (max-width:767px){
+    .product__content-roadmap{
+        margin-top:50px
+    }
+    .product__content-roadmap-header .roadmap-description{
+        margin-top:20px;
+        font-size:16px;
+        line-height:22px
+    }
+    .product__content-roadmap-header .roadmap-title{
+        font-size:20px;
+        line-height:28px
+    }
+    .product__content-roadmap-content .roadmap-tree .year{
+        margin-bottom:30px;
+        margin-left:auto;
+        margin-right:auto
+    }
+    .product__content-roadmap-content .roadmap-tree .year:not(:first-of-type){
+        margin-top:50px
+    }
+    .product__content-roadmap-content .roadmap-tree .roadmap-item{
+        margin-top:20px;
+        position:relative
+    }
+    .product__content-roadmap-content .roadmap-tree .roadmap-item .tree-connect{
+        width:calc(100% / 12 - 5px)!important;
+        left:5px
+    }
+    .product__content-roadmap-content .roadmap-tree .roadmap-item .tree-connect::before{
+        right:-13px;
+        top:-9px
+    }
+    .product__content-roadmap-content .roadmap-tree .roadmap-item .tree-connect::after{
+        left:-5px;
+        top:-4px
+    }
+    .product__content-roadmap-content .roadmap-tree .roadmap-item-card{
+        position:static;
+        padding:20px 26px;
+        max-width:calc((100% / 12) * 11);
+        margin-left:calc(100% / 12)
+    }
+    .product__content p{
+        font-size:16px;
+        line-height:22px
+    }
+}
+@media (min-width:768px){
+    .product{
+        padding-top:150px
+    }
+    .product__content-roadmap-content .roadmap-tree{
+        margin-top:100px
+    }
+    .product__content-roadmap-content .roadmap-tree::before{
+        left: 51.8%;
+        -webkit-transform:translateX(-50%);
+        transform:translateX(-50%)
+    }
+    .product__content-roadmap-content .roadmap-tree .year{
+        margin-left:auto;
+        margin-right:auto
+    }
+    .product__content-roadmap-content .roadmap-tree .year:not(:first-of-type){
+        margin-top:-75px;
+        margin-bottom:115px
+    }
+    .product__content-roadmap-content .roadmap-tree .year:first-of-type{
+        margin-bottom:150px
+    }
+    .product__content-roadmap-content .roadmap-tree .roadmap-item{
+        margin-top:-75px
+    }
+    .product__content-roadmap-content .roadmap-tree .roadmap-item.left{
+        text-align:left
+    }
+    .product__content-roadmap-content .roadmap-tree .roadmap-item.left .roadmap-item-card{
+    }
+    .product__content-roadmap-content .roadmap-tree .roadmap-item.left .roadmap-item-card .tree-connect{
+        top:63px;
+        left:calc(100% + 6px)
+    }
+    .product__content-roadmap-content .roadmap-tree .roadmap-item.left .roadmap-item-card .tree-connect::before{
+        left:-13px;
+        top:-9px
+    }
+    .product__content-roadmap-content .roadmap-tree .roadmap-item.left .roadmap-item-card .tree-connect::after{
+        right:-5px;
+        top:-4px
+    }
+    .product__content-roadmap-content .roadmap-tree .roadmap-item.right{
+        text-align:right
+    }
+    .product__content-roadmap-content .roadmap-tree .roadmap-item.right .roadmap-item-card{
+    }
+    .product__content-roadmap-content .roadmap-tree .roadmap-item.right .roadmap-item-card .tree-connect{
+        top:63px;
+        right:calc(100% + 6px)
+    }
+    .product__content-roadmap-content .roadmap-tree .roadmap-item.right .roadmap-item-card .tree-connect::before{
+        right:-13px;
+        top:-9px
+    }
+    .product__content-roadmap-content .roadmap-tree .roadmap-item.right .roadmap-item-card .tree-connect::after{
+        left:-5px;
+        top:-4px
+    }
+    .product__content-roadmap-content .roadmap-tree .roadmap-item .tree-connect{
+        width:115px
+    }
+    .product__content-roadmap-content .roadmap-tree .roadmap-item-card{
+        padding:50px;
+        max-width:calc(50% - 115px)
+    }
+    .product__content-roadmap-content .roadmap-tree .roadmap-item-card .roadmap-item-title{
+        font-size:24px;
+        line-height:28px
+    }
+    .product__content-roadmap-content .roadmap-tree .roadmap-item-card .roadmap-item-description{
+        margin-top:28px
+    }
+}
+
+.btn-link {
+    font-weight: 800;
+}
