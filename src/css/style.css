@@ -130,7 +130,7 @@ svg {
 
 .token-sale-list h4 {
   -webkit-box-flex: 0;
-  flex: 0 0 240px; }
+  flex: 0 0 200px; }
 
 .token-sale-list p {
   -webkit-box-flex: 1;
@@ -348,3 +348,21 @@ footer input {
 
 .btn-link {
   font-weight: 800; }
+
+@media (max-width: 767px) {
+  .section-header {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 15px; }
+  h1, .h1 {
+    font-size: 2.1rem; }
+  h4, .h4 {
+    font-size: 1.3rem; }
+  .token-sale {
+    margin-top: 30px; }
+  .about-card, .card {
+    margin-bottom: 10px; }
+  .product__content-roadmap-content .roadmap-tree {
+    padding-left: 0; }
+  .subscribe-form input {
+    width: 170px; } }
