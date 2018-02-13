@@ -1,5 +1,7 @@
+@import 'slick.scss';
 
 $darkColor: #00171f;
+$primaryColor: #007bff;
 $grayBgColor: linear-gradient(135deg,#FFF 0,#E9E6F7 100%);
 $headingFont: Montserrat, sans-serif;
 h1,h2,h3,h4,.section-header {
@@ -10,7 +12,6 @@ h1,h2,h3,h4,.section-header {
     font-family: $headingFont;
     &-circular {
         border-radius: 50%;
-        padding: 6px 14px;
     }
 }
 
@@ -34,7 +35,11 @@ section {
     position: relative;
     padding-bottom: 30px;
 }
-
+.section-sub-header {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
 blockquote {
     margin-top: 75px;
     padding-left: 10px;
@@ -83,6 +88,13 @@ section {
     &.dark-bg {
         background: $darkColor;
         color: #fff;
+    }
+    &.blue-bg {
+        background: $primaryColor;
+        color: #fff;
+        .card {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
     }
 }
 
@@ -168,6 +180,9 @@ svg{
     padding: 30px;
     border-radius: 6px;
     background: rgba(255,255,255,0.1);
+    p {
+        margin-bottom: 0;
+    }
   }
 
   .token-sale-list {
@@ -450,6 +465,44 @@ footer input {
     font-weight: 800;
 }
 
+.slick-slide img {
+    max-width: 355px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.team-photos {
+    position: relative;
+}
+.btn-slider-control {
+    position: absolute;
+    z-index: 2;    
+    top: 100px;
+}
+.btn-slider-left {
+    left: -50px;    
+}
+.btn-slider-right {
+    right: -50px;
+}
+
+.slick-prev:after {
+    content: ">";
+    color: red;
+    font-size: 30px;
+  }
+  
+  .slick-next:before {
+    content: "<";
+    color: red;
+    font-size: 30px;
+  }
+
+  .counter {
+      margin-bottom: 15px;
+      font-size: 1.75rem;
+      font-weight: 700;
+  }
+
 @media (max-width: 767px) {
     .section-header {
         font-size: 24px;
@@ -457,13 +510,17 @@ footer input {
         margin-bottom: 15px;
     }
     h1, .h1 {
-        font-size: 2.1rem;
+        font-size: 1.6rem;
+    }
+    h2, .h2 {
+        font-size: 1.4rem;
     }
     h4, .h4 {
         font-size: 1.3rem;
     }
     .token-sale {
         margin-top: 30px;
+        padding: 15px;        
     }
     .about-card, .card {
         margin-bottom: 10px;
@@ -472,6 +529,6 @@ footer input {
         padding-left: 0;
     }
     .subscribe-form input {
-        width: 170px;
+        width: 160px;
     }
 }   
