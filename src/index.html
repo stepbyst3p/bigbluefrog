@@ -9,6 +9,7 @@
     <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.8.0/slick.css" />
 </head>
 
 <body>
@@ -58,15 +59,20 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-7">
-                    <h1>CDER — система хеджирования рисков для тех, кто инвестирует в криптовалюту</h1>
+                    <h1>CDER — система хеджирования рисков
+                        <br>для тех, кто инвестирует
+                        <br>в криптовалюту</h1>
                     <p>Мы защищаем деньги инвесторов</p>
-                    <a href="" class="btn btn-primary btn-lg">Как это работает</a>
+                    <a href="" class="btn btn-primary">Как это работает</a>
                 </div>
                 <div class="col-md-5">
                     <div class="token-sale">
-                        <h2>Распродажа токенов начнется: скоро</h2>
-                        <h4>Оставайтесь на связи!</h4>
-                        <p>Подпишитесь на нашу рассылку, чтобы получать новости и узнать о начале продаж одним из первых</p>
+                        <div>Распродажа токенов начнется через:
+                        </div>
+                        <div id="clock" class="counter"></div>
+                        <p>
+                            <strong>Оставайтесь на связи!</strong>
+                            <br>Подпишитесь на нашу рассылку, чтобы получать новости и узнать о начале продаж одним из первых</p>
                         <form class="form-inline subscribe-form">
                             <div class="form-group mb-2">
                                 <label for="inputPassword2" class="sr-only">Email адрес</label>
@@ -84,16 +90,16 @@
             <div class="section-header">Что такое CDER</div>
             <div class="row">
                 <div class="col-md-9">
-                    <p>CDER — это децентрализованная платформа для хеджирования рисков и спекулятивной торговли с кредитным
-                        плечом и производными финансовыми инструментами (ПФИ) , на высоколиквидных токенах, которая включает
-                        в себя:
+                    <p class="section-sub-header">CDER — это децентрализованная платформа для хеджирования рисков и спекулятивной торговли с кредитным
+                        плечом и производными финансовыми инструментами (ПФИ),
+                        <br>на высоколиквидных токенах, которая включает в себя:
                     </p>
                 </div>
             </div>
             <div class="spacing30"></div>
             <div class="row">
                 <div class="col-md-3">
-                    <div class="about-card">
+                    <div class="about-card card">
                         <div class="about-card-icon">
                             <img src="img/icons/001-server.svg" alt="">
                         </div>
@@ -104,7 +110,7 @@
                     </div>
                 </div>
                 <div class="col-md-3 ">
-                    <div class="about-card ">
+                    <div class="about-card card">
                         <div class="about-card-icon">
                             <img src="img/icons/003-share.svg" alt="">
                         </div>
@@ -116,7 +122,7 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="about-card">
+                    <div class="about-card card">
                         <div class="about-card-icon">
                             <img src="img/icons/002-line-graph.svg" alt="">
                         </div>
@@ -131,7 +137,7 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="about-card">
+                    <div class="about-card card">
                         <div class="about-card-icon">
                             <img src="img/icons/002-line-graph.svg" alt="">
                         </div>
@@ -141,10 +147,6 @@
                     </div>
                 </div>
 
-            </div>
-            <div class="spacing60"></div>
-            <div class="text-center">
-                <a href="https://cder.io" class="btn btn-primary">cder.io</a>
             </div>
 
         </div>
@@ -156,12 +158,12 @@
 
             <div class="spacing30"></div>
 
-            <a href="https://cder.io" class="btn btn-light btn-lg">White Paper</a>
-            <a href="https://cder.io" class="btn btn-warning btn-lg">Yellow Paper</a>
-
+            <a href="https://cder.io" class="btn btn-dark btn-lg">White Paper</a>
+            <a href="https://cder.io" class="btn btn-dark btn-lg">Yellow Paper</a>
+            <a href="https://cder.io" class="btn btn-dark btn-lg">OnePager</a>
         </div>
     </section>
-    <section class="problems gray">
+    <section class="problems">
         <div class="container ">
             <div class="problems ">
                 <div class="row " data-animate="true " style="opacity: 1; transform: none; transition: all 0.5s ease-out; ">
@@ -228,9 +230,9 @@
             <div class="row">
                 <div class="col-md-8 offset-md-2">
                     <div class="section-header">Решение</div>
-                    <p class="lead">CDER децентрализирует биржу криптовалют с помощью блокчейна и смарт-контрактов, устраняет потребность
+                    <p>CDER децентрализирует биржу криптовалют с помощью блокчейна и смарт-контрактов, устраняет потребность
                         в посреднике, делает доступной информацию о транзакциях. </p>
-                    <p class="lead">Cder.io предлагает набор производных финансовых инструментов (ПФИ) для снижения рисков инвесторов.</p>
+                    <p>Cder.io предлагает набор производных финансовых инструментов (ПФИ) для снижения рисков инвесторов.</p>
                 </div>
             </div>
         </div>
@@ -240,12 +242,12 @@
             <div class="row">
                 <div class="col-md-8 offset-md-2">
                     <div class="section-header">Технологии</div>
-                    <p class="lead">Мы используем блокчейн Ethereum. Это отраслевой стандарт для эмиссии цифровых активов и смарт-контрактов.
+                    <p>Мы используем блокчейн Ethereum. Это отраслевой стандарт для эмиссии цифровых активов и смарт-контрактов.
                         Блокчейн Ethereum отлично подходит для нужд проекта CDER: выпуска токенов, децентрализованной фиксации
                         хеджинговых обязательств, приемов платежей и выплат. CDER следует стандарту ERC20. Смарт-контракты
                         будут реализованы на языке программирования Solidity.</p>
                     <div class="spacing30"></div>
-                    <a href="#" class="btn btn-warning btn-lg">Скачать Yellow Paper</a>
+                    <a href="#" class="btn btn-primary btn-lg">Скачать Yellow Paper</a>
                 </div>
             </div>
         </div>
@@ -264,7 +266,15 @@
                             </h5>
                             <p class="card-text">Управлял большими компаниями, вывел на рынок несколько стартапов
                             </p>
-                            <a href="#" class="btn btn-primary">More</a>
+                            <a href="https://www.linkedin.com/in/kirill-afonin" class="btn btn-primary">
+                                <span class="fa fa-envelope"></span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/kirill-afonin" class="btn btn-primary">
+                                <span class="fa fa-linkedin"></span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/kirill-afonin" class="btn btn-primary">
+                                <span class="fa fa-facebook"></span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -279,7 +289,15 @@
 
                             <p class="card-text">Управлял большими компаниями, вывел на рынок несколько стартапов
                             </p>
-                            <a href="#" class="btn btn-primary">More</a>
+                            <a href="https://www.linkedin.com/in/kirill-afonin" class="btn btn-primary">
+                                <span class="fa fa-envelope"></span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/kirill-afonin" class="btn btn-primary">
+                                <span class="fa fa-linkedin"></span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/kirill-afonin" class="btn btn-primary">
+                                <span class="fa fa-facebook"></span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -294,7 +312,15 @@
 
                             <p class="card-text">Управлял большими компаниями, вывел на рынок несколько стартапов
                             </p>
-                            <a href="#" class="btn btn-primary">More</a>
+                            <a href="https://www.linkedin.com/in/kirill-afonin" class="btn btn-primary">
+                                <span class="fa fa-envelope"></span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/kirill-afonin" class="btn btn-primary">
+                                <span class="fa fa-linkedin"></span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/kirill-afonin" class="btn btn-primary">
+                                <span class="fa fa-facebook"></span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -309,14 +335,42 @@
 
                             <p class="card-text">Управлял большими компаниями, вывел на рынок несколько стартапов
                             </p>
-                            <a href="#" class="btn btn-primary">More</a>
+                            <a href="https://www.linkedin.com/in/kirill-afonin" class="btn btn-primary">
+                                <span class="fa fa-envelope"></span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/kirill-afonin" class="btn btn-primary">
+                                <span class="fa fa-linkedin"></span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/kirill-afonin" class="btn btn-primary">
+                                <span class="fa fa-facebook"></span>
+                            </a>
                         </div>
                     </div>
                 </div>
 
             </div>
             <div class="spacing60"></div>
-
+            <div class="team-photos">
+                <button class="btn btn-light btn-circular btn-slider-control btn-lg btn-slider-left">˂</button>
+                <button class="btn btn-light btn-circular btn-slider-control btn-lg btn-slider-right">˃</button>
+                <div class="team-photo-slider">
+                    <div>
+                        <img src="https://placeimg.com/440/320/people" alt="">
+                    </div>
+                    <div>
+                        <img src="https://placeimg.com/440/320/people" alt="">
+                    </div>
+                    <div>
+                        <img src="https://placeimg.com/440/320/people" alt="">
+                    </div>
+                    <div>
+                        <img src="https://placeimg.com/440/320/people" alt="">
+                    </div>
+                    <div>
+                        <img src="https://placeimg.com/440/320/people" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <!-- <section id="ico-review " class="ico-review gray ">
@@ -375,7 +429,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
-                    <div class="section-header">Token Sale</div>
+                    <div class="section-header">Продажа токенов</div>
                 </div>
                 <div class="col-md-7">
                     <ul class="list-unstyled token-sale-list">
@@ -472,11 +526,7 @@
         <div class="container">
             <div class="product__content row">
                 <div class="product__content-header col-md-12 col-xs-10 col-xs-offset-1 col-md-offset-0" data-animate="true" style="opacity: 1; transform: none; transition: all 0.5s ease-out;">
-                    <h2 class="section-header">Roadmap</h2>
-                    <p class="product__content-header-description">cder.io is already well known internationally and was depicted by many local news publications. We plan
-                        to offer our blockchain real estate infrastructure to tenants and landlords around the world by partnering
-                        with local credit bureaus, banks, insurance companies, cryptocurrency exchanges, property management
-                        and real estate companies.</p>
+                    <h2 class="section-header">План развития</h2>
                 </div>
                 <div class="product__content-roadmap col-md-12">
                     <div class="product__content-roadmap-content">
@@ -559,6 +609,232 @@
             </div>
         </div>
     </section>
+    <section class="investors blue-bg">
+        <div class="container">
+            <div class="section-header">Инвесторы</div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="https://rentberry.cryptonomos.com/images/investors/808.20e6155a.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">808 Ventures
+                                <br>
+                                <small>VC Fund - Australia
+                                </small>
+                            </h5>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="https://rentberry.cryptonomos.com/images/investors/JadeValue.81ac1ef7.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">JadeValue (CashBUS)
+                                <br>
+                                <small>VC Fund - China
+                                </small>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="https://rentberry.cryptonomos.com/images/investors/Zing.7b012ace.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Zing Capital
+                                <br>
+                                <small>VC Fund - Canada
+                                </small>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="https://rentberry.cryptonomos.com/images/investors/Sublime.07374095.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Beechwood Ventures
+
+                                <br>
+                                <small>VC Fund - USA
+                                </small>
+                            </h5>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="spacing30"></div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="https://rentberry.cryptonomos.com/images/investors/808.20e6155a.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">808 Ventures
+                                <br>
+                                <small>VC Fund - Australia
+                                </small>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="https://rentberry.cryptonomos.com/images/investors/JadeValue.81ac1ef7.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">JadeValue (CashBUS)
+                                <br>
+                                <small>VC Fund - China
+                                </small>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="https://rentberry.cryptonomos.com/images/investors/Zing.7b012ace.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Zing Capital
+                                <br>
+                                <small>VC Fund - Canada
+                                </small>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="https://rentberry.cryptonomos.com/images/investors/Sublime.07374095.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Beechwood Ventures
+
+                                <br>
+                                <small>VC Fund - USA
+                                </small>
+                            </h5>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="investors gray-bg">
+        <div class="container">
+            <div class="section-header">Консультанты</div>
+            <p class="section-sub-header">У нашей команды лучшие консультанты по вопросам биржевых торгов и операций над ценными бумагами.
+                <br>И мы с гордостью можем сказать, что большинство из них тоже проинвестировало в CDER.</p>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="https://rentberry.cryptonomos.com/images/investors/808.20e6155a.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">808 Ventures
+                                <br>
+                                <small>VC Fund - Australia
+                                </small>
+                            </h5>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="https://rentberry.cryptonomos.com/images/investors/JadeValue.81ac1ef7.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">JadeValue (CashBUS)
+                                <br>
+                                <small>VC Fund - China
+                                </small>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="https://rentberry.cryptonomos.com/images/investors/Zing.7b012ace.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Zing Capital
+                                <br>
+                                <small>VC Fund - Canada
+                                </small>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="https://rentberry.cryptonomos.com/images/investors/Sublime.07374095.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Beechwood Ventures
+
+                                <br>
+                                <small>VC Fund - USA
+                                </small>
+                            </h5>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="spacing30"></div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="https://rentberry.cryptonomos.com/images/investors/808.20e6155a.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">808 Ventures
+                                <br>
+                                <small>VC Fund - Australia
+                                </small>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="https://rentberry.cryptonomos.com/images/investors/JadeValue.81ac1ef7.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">JadeValue (CashBUS)
+                                <br>
+                                <small>VC Fund - China
+                                </small>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="https://rentberry.cryptonomos.com/images/investors/Zing.7b012ace.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Zing Capital
+                                <br>
+                                <small>VC Fund - Canada
+                                </small>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="https://rentberry.cryptonomos.com/images/investors/Sublime.07374095.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Beechwood Ventures
+
+                                <br>
+                                <small>VC Fund - USA
+                                </small>
+                            </h5>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="dark-bg cta">
         <div class="container">
             <h2>Будьте в курсе о начале ICO!</h2>
@@ -566,7 +842,7 @@
             <form class="form-inline subscribe-form">
                 <div class="form-group mb-2">
                     <label for="inputPassword2" class="sr-only">Email</label>
-                    <input type="password" class="form-control" id="inputPassword2" placeholder="Email Address">
+                    <input type="password" class="form-control" id="inputPassword2" placeholder="Email адрес">
                 </div>
                 <button type="submit" class="btn btn-primary mb-2">Подписаться</button>
             </form>
@@ -595,7 +871,7 @@
                 </div>
                 <div class="col-md-4 offset-xs-1 col-6 offset-md-1 col-xs-10">
                     <div class="contact-us">
-                        <p>Contact us with any questions regarding
+                        <p>Свяжитесь с нами по любому вопросу:
                             <br>cder.io:
                             <a href="mailto:ico@cder.io.com">
                                 <b>ico@cder.io.com</b>
@@ -691,6 +967,8 @@
         </div>
 
     </footer>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
